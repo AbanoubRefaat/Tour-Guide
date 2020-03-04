@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/image_dim"
+        android:layout_height="@dimen/image_dim"
+        android:id="@+id/image_view"
+        android:visibility="invisible"
+
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/image_dim"
+        android:id="@+id/text_container"
+        >
+        <TextView
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_dim"
+            android:id="@+id/landmark_name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@+id/landmark_name"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_dim"
+            android:id="@+id/landmark_location"
+            android:textStyle="italic"
+            />
+        <ImageView
+            android:id="@+id/stop_image"
+            android:visibility="invisible"
+            android:src="@drawable/baseline_stop_black_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/image_dim"
+            android:layout_height="@dimen/image_dim"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

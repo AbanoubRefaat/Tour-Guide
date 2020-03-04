@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/alexandria_harbour">
+
+    <ImageView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_image"
+        android:src="@drawable/flag"/>
+    <TextView
+        android:id="@+id/eastern"
+        style="@style/mainCategory"
+        android:text="@string/East"
+
+        />
+    <TextView
+        android:id="@+id/western"
+       style="@style/mainCategory"
+        android:text="@string/West"
+        />
+    <TextView
+        android:id="@+id/middle"
+       style="@style/mainCategory"
+        android:text="@string/middle"
+        />
+    <TextView
+        android:id="@+id/songs"
+       style="@style/mainCategory"
+        android:text="@string/songs"
+        />
+
+
+
+</LinearLayout>
